@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rosja</title>
+        <link rel="icon" type="image/x-icon" href="flagarosja.png">
+        <style>
+            h1
+            {
+                text-align: center;
+            }
+            tr
+            {
+                border: 3px;
+            }
+            table
+            {
+                border: 4px solid;
+                border-collapse: collapse;
+                margin: auto;
+                background-color: blanchedalmond;
+            }
+            th,td
+            {
+                padding: 5px;
+            }
+            th
+            {
+                border: 2px solid;
+                border-bottom: 4px solid;
+            }
+            td
+            {
+                border: 2px solid;
+            }
+            ul
+            {
+                list-style-image: url(flagarosja.png);
+            }
+            .column {
+                float: left;
+                width: 16%;
+                padding: 5px;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            img{
+                border: 1px solid rgb(109, 109, 109); /* Gray border */
+                border-radius: 4px;  /* Rounded border */
+                padding: 5px; /* Some padding */
+                width: 150px; /* Set a small width */
+            }
+            img:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+            img:hover {
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes shake {
+                0% { transform: translate(1px, 1px) rotate(0deg); }
+                10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                20% { transform: translate(-3px, 0px) rotate(1deg); }
+                30% { transform: translate(3px, 2px) rotate(0deg); }
+                40% { transform: translate(1px, -1px) rotate(1deg); }
+                50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                60% { transform: translate(-3px, 1px) rotate(0deg); }
+                70% { transform: translate(3px, 1px) rotate(-1deg); }
+                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                90% { transform: translate(1px, 2px) rotate(0deg); }
+                100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rosja informacje o wycieczce</h1>
+        <div>
+        <table>
+            <tr>
+                <th>Czas wycieczki</th>
+                <th>Zakwaterowanie</th>
+                <th>Data rozpoczęcia</th>
+                <th>Data zakończenia</th>
+            </tr>
+            <tr>
+                <th>15 dni</th>
+                <th>W cenie</th>
+                <th>15.11.2023</th>
+                <th>30.11.2023</th>
+            </tr>
+        </table>
+        </div>
+        <h1>Lista Uczestinków</h1>
+        <div>
+        <ul>
+            <li>Gracjan Roztocki</li>
+            <li>Gracjan Roztocki</li>
+            <li>Gracjan Roztocki</li>
+            <li>Gracjan Roztocki</li>
+            <li>Gracjan Roztocki</li>
+            <li>Gracjan Roztocki</li>
+            <li>Gracjan Roztocki</li>
+        </ul>
+        </div>
+        <h1>Zdjęcia</h1>
+          <a target="_blank" href="rosjazdj1.jpg">
+            <img src="rosjazdj1.jpg" alt="zdjęcie" style="width: 292px; height: 200px;">
+          </a>
+          <a target="_blank" href="rosjazdj2.jpg">
+            <img src="rosjazdj2.jpg" alt="zdjęcie" style="width: 292px; height: 200px;">
+          </a>
+          <a target="_blank" href="rosjazdj3.jpg">
+            <img src="rosjazdj3.jpg" alt="zdjęcie" style="width: 292px; height: 200px;">
+          </a>
+          <a target="_blank" href="rosjazdj4.jpg">
+            <img src="rosjazdj4.jpg" alt="zdjęcie" style="width: 292px; height: 200px;">
+          </a>
+          <a target="_blank" href="rosjazdj5.jpg">
+            <img src="rosjazdj5.jpg" alt="zdjęcie" style="width: 292px; height: 200px;">
+          </a>
+          <a target="_blank" href="rosjazdj6.jpg">
+            <img src="rosjazdj6.jpg" alt="zdjęcie" style="width: 292px; height: 200px;">
+          </a>
+    </body>
+</html>
