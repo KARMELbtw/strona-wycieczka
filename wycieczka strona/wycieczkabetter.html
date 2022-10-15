@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Wycieczka</title>
+            <link rel="icon" type="image/x-icon" href="góra.jpg">
+            <style>
+                h1
+                {
+                    text-align: center;
+                }
+                table
+                {
+                    border: 4px solid;
+                    border-collapse: collapse;
+                    margin: auto;
+                    background-color: blanchedalmond;
+                    box-shadow: 10px 10px 5px 12px rgb(110, 110, 110);
+                }
+                th,td
+                {
+                    padding: 5px;
+                }
+                th{
+                    border: 2px solid;
+                    border-bottom: 4px solid;
+                }
+                td{
+                    border: 2px solid;
+                }
+                body
+                {
+                    background-image: url("tlo.jpg");
+                }
+                .container 
+                {
+                position: relative;
+                width: 50%;
+                }
+                .overlay {
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  height: 98%;
+                  width: 200%;
+                  opacity: 0;
+                  transition: .5s ease;
+                  background-color: #89c8dd;
+                }
+                .container:hover .overlay {
+                 opacity: 1;
+                }
+
+        .text {
+          color: white;
+          font-size: 20px;
+         position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        }
+            </style>
+        </head>
+        <body>
+            <h1>Wycieczki</h1>
+            <div>
+            <table>
+                <tr>
+                    <th>Kraj</th>
+                    <th>Cena</th>
+                    <th>Liczba Miejsc</th>
+                    <th>Obrazek</th>
+                </tr>
+                <tr>
+                    <th>Rosja</th>
+                    <th>0zł</th>
+                    <th>100</th>
+                    <th><a href="rosja.html"><div class="container"><div class="overlay">
+                        <div class="text">Rosja</div>
+                      </div><image src="rosja.jpg"; style="height: 150px; width: 220px;"></image></div></a></th>
+                </tr>
+                <tr>
+                    <th>Szwecja</th>
+                    <th>1500zł</th>
+                    <th>52</th>
+                    <th><div class="container"><div class="overlay">
+                        <div class="text">Szwecja</div>
+                      </div><image src="szewcja.jpg"; style="height: 150px; width: 220px;"></image></div></th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Kanada</th>
+                    <th>5300zł</th>
+                    <th>76</th>
+                    <th rowspan="2"><div class="container"><div class="overlay">
+                        <div class="text">Kanada</div>
+                      </div><image src="kanada.jpeg"; style="height: 150px; width: 220px;"></image></div></th>
+                </tr>
+                <tr>
+                    <th colspan="2">bo gościu się uparł</th>
+                </tr>
+            </table>
+            </div>
+            
+        </body>
+    </html>
